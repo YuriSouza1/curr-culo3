@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@font-face {
+    font-family: neutron;
+    src: url(fonts/Neutrons/NeutronsDemoRegular.ttf);
+}
+
+@font-face {
+    font-family: square;
+    src: url(fonts/Square/Square.ttf);
+}
+
+:root {
+    --font-neutrons: 'neutron';
+    --font-square: 'square';
+    --cor1: #c8a480c9;
+    --cor2: #c8a48096;
+    --cor3: #3a3026c0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(imagens/backgrounds/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p a {
+    font-family: 'Anton', sans-serif;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border: 1px solid #c8a48096;
+    background-color: #c8a480c9;
+    font-size: 1.4em;
+    border-radius: 10px;
+    transition: background-color 0.4s;
+}
+
+p a:hover {
+    background-color: #91755a96;
+}
+
+nav p {
+    margin-top: 2em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 49em;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1, h2 {
+    font-family: var(--font-neutrons);
+}
+
+h1 {
+    font-size: 6.5em;
+    margin: auto;
+    padding-left: 2em;
+    padding-top: 0.4em;
+}
+
+h2 {
+    padding-left: 9.7em;
+    padding-top: 1em;
+    margin: auto;
+}
+
+#perfil {
+    width: 30em;
+    margin: auto;
+    padding-top: 9em;
+}
+
+img {
+    width: 6em;
+    margin: auto;
+    padding-top: 4em;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2.5em;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+main section a {
+    margin: auto;
+    padding-top: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main section a:hover {
+    color: var(--cor3);
+}
+
+#section1 h3 {
+    font-family: var(--font-square);
+    font-size: 2.5em;
+    margin: auto;
+    margin-top: 2em ;
+    margin-bottom: 2em;
+    padding: 0em 1.5em;
+    background-color: rgba(0, 255, 255, 0.562);
+    border: 2px solid white;
+}
+
+#section1 {
+    margin-left: 11em;
+}
+
+#section1 h4 {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    margin-top: -1em;
+}
+
+.barras {
+    margin: auto;
+    width: 20em;
+    height: 2.9em;
+    margin-bottom: 3.4em;
+}
+
+#section2 {
+    padding-right: 5em;
+}
+
+#section2 h3, ul, p{
+    margin: auto;
+}
+
+#section2 h3 {
+    font-family: var(--font-square);
+    font-size: 2em;
+}
+
+#section2 p {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#section2 ul li {
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#section2 a {
+    padding: 0em 0.3em;
+    border: none;
+    color: black;
+    background-image: linear-gradient(to left,white, #91755a00, #3a302673);
+}
+
+#section2 a:hover {
+    color: rgba(0, 0, 255, 0.432);
+}
+
+@media (max-device-width: 1200px) {
+    body {
+        background-image: url(imagens/backgrounds/background_1200.jpg);
+    }    
+}
+
+@media (max-device-width: 800px) {
+    body {
+        background-image: url(imagens/backgrounds/background_800.jpg);
+    }    
+}
+
+@media (max-device-width: 600px) {
+    body {
+        background-image: url(imagens/backgrounds/background_600.jpg);
+    }    
+}
+
+@media (max-device-width: 400px) {
+    body {
+        background-image: url(imagens/backgrounds/background_400.jpg);
+    }    
+}
